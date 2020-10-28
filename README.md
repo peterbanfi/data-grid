@@ -1,5 +1,7 @@
 # Data Grid
 
+## [Demo](https://peterbanfi.github.io/data-grid/)
+
 ## What is this?
 
 Data Grid fills a grid container with squares. Squares are simple div elements in the container and each of them belongs to their uniqe object.

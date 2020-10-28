@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  perspective: 100px;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.square-container {
+  background-color: #dedede;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  position: relative;
+  transition: transform .2s ease-out;
+  box-shadow: rgb(90, 90, 90) 0px 16px 60px;
+}
+
+.square-container:before {
+  content: 'Y =>';
+  position: absolute;
+  top: 20px;
+  left: -30px;
+  transform: rotate(90deg);
+}
+
+
+.square-container:after {
+  content: 'X =>';
+  position: absolute;
+  top: -30px;
+  left: 20px;
+}
+
+/* .square {
+  background-color: #fff;
+  cursor: pointer;
+} */
+
+/* .square:hover {
+  background-color: #dedede;
+}
+
+.active {
+  background-color: rgb(0, 180, 80);
+} */
+
+.actions {
+  margin: 0 auto 36px;
+}
+
+p {
+  text-align: center;
+}
+
+.reset-button {
+  width: 100%;
+  margin: 20px auto;
+  background-color: rgb(163, 163, 163);
+  outline: none;
+  border: none;
+  padding: 6px;
+  color: white;
+}
+
+.reset-button:hover {
+  cursor: pointer;
+  background-color: rgb(150, 150, 150);
+}
